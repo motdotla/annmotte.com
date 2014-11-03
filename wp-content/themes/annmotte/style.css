@@ -1,0 +1,626 @@
+/*  
+Theme Name: Ann Motte Theme
+Theme URI: http://scottmotte.com/themes/
+Description: The default theme for <a href="http://annmotte.com">Ann Motte</a>.
+Version: 1.0
+Author: Scott Motte
+Author URI: http://scottmotte.com/
+
+	Ann Motte v1.0
+	 http://scottmotte.com/themes/
+
+	This theme was designed and built by Scott Motte,
+	whose blog you will find at http://scottmotte.com/
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+	
+
+	*** REGARDING IMAGES ***
+	All CSS that involves the use of images, can be found in the 'index.php' file.
+	This is to ease installation inside subdirectories of a server.
+
+	Have fun, and don't be afraid to contact me if you have questions.
+*/
+
+
+
+/* Begin Typography & Colors */
+body {font-family: Helvetica, Verdana, Arial, sans-serif; line-height: 130%; text-align: center; color:#333; margin:0; padding:0; background: #fff;}
+
+a:hover {
+	text-decoration: none;
+}
+#page {width: 770px; margin:0 auto;border: 1px solid #ccc; border-top: none;border-bottom: none; background: #fff;}
+
+#header {}
+#header h1 {display: none;}
+#header .description {font:normal medium Georgia, "Times New Roman", Times, serif; padding-top:3px; padding-bottom:3px;}
+#header .headerimg img{border: none;padding-bottom: 7px;}
+
+.headermenu {font:normal small Verdana, Arial, Helvetica, sans-serif; color: #000; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; height: 30px;}
+.headermenu ul {margin: 0;padding: 0;cursor: default;list-style-type: none;display:inline;}
+.headermenu ul li {float: left; display: table-cell;position: relative; border-right:1px solid #ccc; }
+.headermenu ul li a {display:block; padding-top: 7px; padding-bottom: 7px; padding-left: 12px; padding-right: 12px; text-decoration:none; color: #000;}
+.headermenu ul li a:hover {background: #990000; color: #fff;}
+
+
+
+hr {display: none;}
+
+#miniposts ul {
+	margin: 0 auto;
+	background: #ffffBD;
+	padding: 3px 25px 3px 25px;
+	list-style-type: none;
+	text-align: left;
+	font-size: 12px;
+	border-bottom: 1px solid #999;
+}
+#miniposts ul h2.widgettitle {
+	text-align: left;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+#miniposts ul li {
+	padding: 0;
+	margin: 0;
+}
+#miniposts p {
+	line-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+
+#content {text-align:left; }
+.narrowcolumn {float: left; width: 500px; margin: 0 0 0 20px; }
+.widecolumn {float: none; margin: 0 auto; width: 650px;}
+
+h2 {font-weight: normal;}
+
+
+.navigation {color: #999; padding: 7px 0 7px 0;}
+.navigation a {color: #999; font-size:12px; text-decoration: underline;}
+.navigation a:hover {color: #333; text-decoration: underline;}
+.navigation .alignright {float: right;}
+.navigation .alignleft {float: left;}
+
+.post {padding-top: 50px; font-family: Helvetica, Verdana,Arial,sans-serif; line-height: 150%; font-size: 13px;}
+.post h2 {padding: 0; margin: 0; font-family: Georgia, "Times New Roman", Times, serif; font-size: 20px; color:#900; line-height: 120%;}
+.post h2 a {text-decoration: none; color: #900;}
+.post h2 a:hover {color: #590000;}
+.post h3 {padding: 0; margin: 0; font:normal medium Georgia, "Times New Roman", Times, serif; color:#900;}
+.post h3 a {color: #0000FF; text-decoration: underline;}
+.post h3 a:hover {color: #0000FF;}
+.post small {color: #999; font-size: 12px;}
+p.postmetadata {color: #999; font-size: 12px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;background: #fcfcfc; padding: 3px;}
+
+
+#sidebar {text-align: left; float: right; width: 180px; font-size: 12px; 
+	border: 1px solid #ccc;
+	border-right: 1px solid #999;
+	border-bottom: 2px solid #999;
+	padding: 0 7px 10px 7px; margin: 40px 0 0 0;
+	background: #f0f0f6;}
+
+#sidebar a, #sidebar a:visited {
+	color: #666;
+	text-decoration: underline;
+}
+#sidebar a:hover {
+	text-decoration: none;
+}
+#sidebar form#searchform input#s {
+	width: 145px;
+}
+#sidebar h3, h2.widgettitle {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	color: #900;
+	font-size: 18px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#sidebar ul {list-style-type: none; margin: 0;padding: 0;}
+#sidebar ul li {
+	margin: 0;
+	padding: 10px 0 10px 0;
+	border-bottom: 1px dotted #999;
+}
+#sidebar ul ul {list-style-type: disc; margin: 0; padding: 0 0 0 20px;}
+#sidebar ul ul li {font-size: 12px; margin: 0; padding: 0 0 3px 0; border: none; line-height: 150%;}
+
+
+
+#footer {font-size: 12px; margin-top: 15px; }
+#footer img {border: none;}
+#footer p {margin: 0 auto; width: 600px; color:#999;}
+#footer p a{color:#0000ff;}
+
+
+/*******************
+.subscribe form
+********************/
+.subscribeform {}
+.subscribeform form {}
+.subscribe form input.email {}
+.subscribeform input.submitbutton {
+	}
+.subscribeform img {padding: 0; margin: 0;}
+img, img a, img a:link, img a:hover, img a:visited {border: none;}
+
+
+
+
+
+/*============================================
+	7: Comments
+==============================================*/
+.comments-closed {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	}
+#comments, #respond {
+	font-size: 12px;
+	}
+#comments h3, #respond h3 {
+	color: #900;
+	font: 16px Georgia;
+	margin-bottom: 1px;
+	}
+ol.commentlist {
+	padding: 0;
+	margin: 0;
+	padding-bottom: 1px;
+	}
+ol.trackbacklist {
+	padding-bottom: 1px;
+	}
+ol.commentlist li.comment-item {
+	overflow: hidden;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #ccc;
+	}
+ol.commentlist p, ol.commentlist ol, ol.commentlist ul, ol.commentlist blockquote {
+	margin-bottom: 1px;
+	}
+ol.commentlist li.comment-item .comment-text {
+	}
+ol.commentlist li.comment-item .comment-info {
+	}
+#comments .comment-text ol li {
+	list-style-type: decimal;
+	margin: 0 0 2px 5px;
+	}
+#comments .comment-text ul li {
+	list-style-type: disc;
+	margin: 0 0 2px 2px;
+	padding-left: 0.5em;
+	}
+.comment-info a:hover {
+	background: #f8f8f8;
+	}
+.comment-author a {
+	color: #06c;
+	}
+.comment-date, .comment-date a {
+	color: #666;
+	}
+ol.commentlist p {
+	line-height: 130%;
+	}
+ol.trackbacklist li {
+	padding: 0 0 5px 5px;
+	}
+.trackback-link {
+	display: block;
+	padding-top: 8px;
+	}
+.trackback-url {
+	display: block;
+	padding: 4px 0;
+	}
+#respond {
+	padding-bottom: 10px;
+	}
+#respond h3 {
+	margin-bottom: 5px;
+	}
+#respond p {
+	margin-bottom: 5px;
+	}
+#respond label {
+	}
+.commentform-input, .commentform-textarea {
+	width: 80%;
+	padding: 2px 0;
+	margin-bottom: 5px;
+	}
+.commentform-button {
+	padding: 2px 5px;
+	}
+
+
+.akst_link, .post-ratings {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+small {
+	}
+
+h1, h2, h3 {
+	}
+
+h1 {
+	}
+
+#headerimg .description {
+	}
+
+h2 {
+	}
+
+h2.pagetitle {
+	}
+
+#sidebar h2 {
+	}
+
+h3 {
+	}
+
+h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description {
+	}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	}
+
+.entry p a:visited {
+	}
+
+.commentlist li, #commentform input, #commentform textarea {
+	}
+	
+.commentlist li {
+	}
+
+.commentlist cite, .commentlist cite a {
+	}
+
+.commentlist p {
+	}
+
+#commentform p {
+	}
+
+.commentmetadata {
+	}
+
+#sidebar {
+	}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+	}
+	
+code {
+	}
+
+acronym, abbr, span.caps
+{
+	}
+
+a, h2 a:hover, h3 a:hover {
+	}
+
+a:hover {
+	}
+	
+#wp-calendar #prev a {
+	}
+
+#wp-calendar a {
+	}
+
+#wp-calendar caption {
+	}
+
+#wp-calendar th {
+	}
+/* End Typography & Colors */
+
+
+
+/* Begin Structure */
+body {
+	}
+
+#page {
+	}
+	
+#header {
+	}
+
+#headerimg {
+	}
+
+.narrowcolumn {
+	}
+
+.widecolumn {
+	}
+	
+.post {
+	}
+
+.widecolumn .post {
+	}
+
+.narrowcolumn .postmetadata {
+	}
+
+.widecolumn .postmetadata {
+	}
+
+.widecolumn .smallattachment {
+}
+
+.widecolumn .attachment {
+}
+
+.postmetadata {
+}
+
+#footer {
+	}
+
+#footer p {
+	}
+/* End Structure */
+
+
+
+/*	Begin Headers */
+h1 {
+	}
+
+h2 {
+	}
+
+h2.pagetitle {
+}
+
+#sidebar h2 {
+	}
+
+h3 {
+	}
+
+h3.comments {
+	}
+/* End Headers */
+
+
+
+/* Begin Images */
+p img {
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+	
+img.centered {
+	}
+	
+img.alignright {
+	float: right;
+	padding-left: 12px;
+	}
+
+img.alignleft {
+	}
+
+.alignright {
+	float: right;
+	padding-left: 12px;
+	}
+	
+.alignleft {
+	}
+/* End Images */
+
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+	} 
+
+html>body .entry li {
+	}
+
+.entry ul li:before, #sidebar ul ul li:before {
+	}
+
+.entry ol {
+	}
+
+.entry ol li {
+	}
+
+.postmetadata ul, .postmetadata li {
+	}
+	
+#sidebar ul, #sidebar ul ol {
+	}
+
+#sidebar ul li {
+	}
+
+#sidebar ul p, #sidebar ul select {
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	}
+
+ol li, #sidebar ul ol li {
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	}
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	}
+
+#sidebar #searchform #s {
+	}
+
+#sidebar #searchsubmit {
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	}
+
+select {
+	}
+
+#commentform input {
+	}
+
+#commentform textarea {
+	}
+
+#commentform #submit {
+	}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+.alt {
+	}
+
+.commentlist {
+	}
+
+.commentlist li {
+	}
+
+.commentlist p {
+	}
+
+#commentform p {
+	}
+
+.nocomments {
+	}
+
+.commentmetadata {
+	}
+/* End Comments */
+
+
+
+/* Begin Sidebar */
+#sidebar
+{
+	}
+
+#sidebar form {
+	}
+/* End Sidebar */
+
+
+
+/* Begin Calendar */
+#wp-calendar {
+	}
+
+#wp-calendar #next a {
+	}
+
+#wp-calendar #prev a {
+	}
+
+#wp-calendar a {
+	}
+
+#wp-calendar caption {
+	}
+
+#wp-calendar td {
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */ }
+/* End Calendar */
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	}
+
+acronym, abbr {
+	}
+
+blockquote {
+	}
+
+blockquote cite {
+	}
+
+.center {
+	}
+
+hr {
+	}
+
+a img {
+	}
+
+.navigation {
+	}
+/* End Various Tags & Classes*/
+
+
+
+/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
+	It won't be a stylish marriage, I can't afford a carriage.
+	But you'll look sweet upon the seat of a bicycle built for two." */

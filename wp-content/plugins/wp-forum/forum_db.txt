@@ -1,0 +1,75 @@
+-- phpMyAdmin SQL Dump
+-- version 2.7.0-pl2
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Jul 21, 2006 at 01:08 PM
+-- Server version: 5.0.19
+-- PHP Version: 5.1.4
+-- 
+-- Database: `wordpress`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `wp_forum_forums`
+-- 
+
+CREATE TABLE `wp_forum_forums` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(255) NOT NULL default '',
+  `parent_id` int(11) NOT NULL default '0',
+  `description` varchar(255) NOT NULL default '',
+  `views` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+ 
+)  ;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `wp_forum_groups`
+-- 
+
+CREATE TABLE `wp_forum_groups` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `wp_forum_posts`
+-- 
+
+CREATE TABLE `wp_forum_posts` (
+  `id` int(11) NOT NULL auto_increment,
+  `author_name` varchar(255) default NULL,
+  `author_email` varchar(255) default NULL,
+  `author_web` varchar(255) default NULL,
+  `text` longtext,
+  `thread_id` int(11) NOT NULL default '0',
+  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+  `author_id` int(11) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `views` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+ 
+)  ;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `wp_forum_threads`
+-- 
+
+CREATE TABLE `wp_forum_threads` (
+  `id` int(11) NOT NULL auto_increment,
+  `forum_id` int(11) NOT NULL default '0',
+  `views` int(11) NOT NULL default '0',
+  `subject` varchar(255) NOT NULL default '',
+  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+  PRIMARY KEY  (`id`)
+)   ;

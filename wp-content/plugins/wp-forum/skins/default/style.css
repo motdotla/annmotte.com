@@ -1,0 +1,156 @@
+/*
+	Skin name: Default
+	Description: Default WP-Forum skin
+	Author: Fredrik Fahlstad
+	Author url: http://www.fahlstad.se
+	WP-Forum url: http://www.fahlstad.se/wp-plugins/wp-forum
+	Version: 1.0
+*/
+#wp-forum table{
+	border-collapse:collapse;
+	width:100%;
+	margin-bottom:1em;
+}
+#wp-forum table.main_table{
+	border:2px #006699 solid;
+}
+#wp-forum table.main_table td{
+	background:#fff;
+	padding:2px;
+}
+#wp-forum table th{
+	
+}
+#wp-forum a, #wp-forum a:visited{
+	color:#006699;
+}
+#wp-forum a.forum_link{
+	font-weight:bold;
+}
+#wp-forum span{
+	font-size:85%;
+}
+#wp-forum table.group_table{
+	margin:0;
+	
+}
+#wp-forum table.group_table td{
+	background:#efefef;
+	border:1px #fff solid;
+	padding:0 5px 0 5px;
+	
+}
+#wp-forum table.forum_table{
+	margin:0;
+}
+#wp-forum table.forum_table td{
+	background:#efefef;
+	border:1px #fff solid;
+	padding:0 5px 0 5px;
+}
+#wp-forum table.posts_table{
+	margin:0;
+}
+#wp-forum table.posts_table td{
+	background:#efefef;
+	border:1px #fff solid;
+	padding:0 5px 0 5px;
+	
+}
+#wp-forum table.posts_table td.divider{
+	background:#d1d7dc;
+	height:7px;
+	padding:0;
+}
+#wp-forum table.posts_table td.o{
+	background:#dee3e7;
+	
+}
+#wp-forum table.reply_table td{
+	background:#efefef;
+	border:1px #fff solid;
+	padding:5px;
+}
+#wp-forum table.user_table{
+	
+}
+#wp-forum table.user_table td{
+	background:#efefef;
+	border:1px #fff solid;
+	padding:5px;
+}
+#wp-forum table.search_table td{
+	background:#efefef;
+	border:1px #fff solid;
+	
+}
+#wp-forum table.search_results_table td{
+	background:#efefef;
+	padding:3px;
+	border:1px #fff solid;
+	
+}
+#wp-forum table td.group_header{
+	background:url(images/cellpic1.gif);
+	height:28px;
+	color:#000;
+	font-weight:bold;
+}
+#wp-forum table td.table_header{
+	background:url(images/cellpic3.gif);
+	height:28px;
+	color:#ffa34f;
+	font-weight:bold;
+	text-align:center;
+	padding:0;
+}
+
+#wp-forum table td.table_meta{
+	background:#dee3e7;
+}
+#wp-forum table.forum-meta{
+	background:url(images/cellpic1.gif);
+	height:28px;
+	width:100%;
+}
+#wp-forum table.forum-meta td{
+	padding:0 5px 0 5px;
+}
+#wp-forum .quote{
+	float:right;
+	padding-top:5px;
+}
+#wp-forum table.posts_table td.post-text{
+	padding:10px;
+}
+#wp-forum span.post_meta{
+	float:left;
+}
+#wp-forum table.reply_table{
+	margin:0;
+	
+}
+
+#wp-forum #forumtext{
+	width:100%;
+	height:200px;
+}
+#wp-forum blockquote{
+	background-image:none;
+	background-color:#fff;
+	border:1px #999 solid;
+	padding:10px;
+	margin:0 0 1em 0;
+}
+#wp-forum table.recent_table td{
+	border:none;
+}
+#wp-forum table.user_table td.table_meta{
+	font-weight:bold;
+}
+#subscript{
+	background:#dee3e7;
+	padding:10px;
+	border:1px #ccc solid;
+	
+}

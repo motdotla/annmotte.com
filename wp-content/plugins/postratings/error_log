@@ -1,0 +1,1 @@
+[17-Mar-2008 20:32:48] PHP Fatal error:  Call to undefined function:  current_user_can() in /home/annmotte/public_html/wp-content/plugins/postratings/postratings-manager.php on line 21
